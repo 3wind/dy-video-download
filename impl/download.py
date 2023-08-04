@@ -10,11 +10,14 @@ def make_dir(dir):
         print('目录：【', dir, '】创建成功')
 
 
-pattern = re.compile('["!@#$%^&*()_+[\]\{\};:,./<>?\|\`\~\-\=]')
+pattern = re.compile('["!@#$%^&*()_+[\]\{\};:,./<>?\|\`\~\-\=\n]')
 # 下载并保存视频
 def download_video(url, name, path):
     file_path = os.path.join(path,  re.sub(pattern, '', name) + '.mp4')
     print('---download---')
+    if (os.path.exists(file_path)):
+        print('{name}------已存在！'.format(name=file_path))
+        return
     # 发送网络请求并获取响应
     response = requests.get(url, stream=True)
     # 检查响应状态码是否为200

@@ -1,11 +1,11 @@
-# 下载方式：url，id。url根据用户url下载，id根据视频id进行下载
-load-type: 'id' 
+# 下载方式: url, id  url根据用户url下载，id根据视频id进行下载
+load-type: 'url' 
 
 # 视频网站
-url: 'https://www.douyin.com/user/MS4wLjABAAAA-Ed1qMzKNvZgaEzdP72M3MoWTs4AByTJcZm-Usb-nrHxQpyFufY27a-TBW8YFzM9'
+url: 'https://www.douyin.com/user/MS4wLjABAAAAKxPOisbl6kuP6LlgTLeUcbhXRNR291byPMYPjxwdKdRQmZXFlIorOmeFnZyZ39Ar'
 
 # id，可通过视频页面 source 搜索 xg-video-container
 id: 'v0d00fg10000cisddqrc77u2mbke3m3g'
 
 # 视频保存地址
-save-path: 'D:/dy-download/test'
+save-path: 'E:/抖音视频/老莫'
